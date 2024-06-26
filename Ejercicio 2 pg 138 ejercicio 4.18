@@ -1,0 +1,22 @@
+Algoritmo CalculoInteres
+	
+    Definir año_inicial, año_actual, capital, interes, n_año, invercion_actual Como Real
+    
+    Escribir "\n----------BIENVENIDO----------"
+    
+    año_inicial <- 1961
+    capital <- 1500
+    interes <- 0.15
+    
+    Escribir "Ingrese el año actual: "
+    Leer año_actual
+    
+    n_año <- año_actual - año_inicial
+    invercion_actual <- capital * (1 + interes)^n_año
+    
+    Escribir "Valor del capital: $", capital
+    Escribir "Valor del interes: ", interes * 100, "%"
+    Escribir "Cantidad de años de interes: ", n_año
+    Escribir "El valor actual de la inversion: $", invercion_actual
+    
+FinAlgoritmo
